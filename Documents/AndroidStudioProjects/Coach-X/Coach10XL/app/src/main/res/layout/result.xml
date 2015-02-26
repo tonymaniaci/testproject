@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="130dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/twitter"
+            android:id="@+id/imageView" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/imageView">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/name" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Scheduled"
+                android:text="Scheduled:"
+                android:textStyle="bold|italic"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tbDuration"
+                android:text="Duration:"
+                android:textStyle="bold|italic"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tbStatus"
+                android:text="Status:"
+                android:textStyle="bold|italic"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/imageView"
+        android:layout_height="600dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Action"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:textSize="40dp">
+        </TextView>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Session"
+            android:id="@+id/btnSessions"
+            android:onClick="StartSession"
+            android:gravity="center_horizontal" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Waiting Room"
+            android:id="@+id/btnClientDetail"
+            android:onClick="DisplayWaitingRoom" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Client Detail"
+            android:id="@+id/btnClientDetail"
+            android:onClick="DisplayClient" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Schedule Next Appointment"
+            android:id="@+id/btnNextAppment" />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact"
+            android:gravity="center"
+            android:singleLine="false"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:textSize="40dp"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Client"
+            android:id="@+id/btnContactClient" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Office"
+            android:id="@+id/btnContactOffice" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            android:id="@+id/btnContactOther" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
